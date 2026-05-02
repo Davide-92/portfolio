@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro ore — Davide Brogna</title>
+  <meta name="description" content="Web App PWA per la gestione e il monitoraggio delle ore di lavoro." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Registro ore — Progetto di Davide Brogna" />
+  <meta property="og:description" content="Web App PWA per la gestione e il monitoraggio delle ore di lavoro." />
+  <meta property="og:type" content="article" />
+
+  <!-- Favicon: i percorsi sono relativi alla root del sito, quindi serve "../" -->
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Font (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS condiviso con la home (fa il join sul .. perché siamo in una sottocartella) -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <!-- Tutti i link puntano alla home con ancora, perché siamo in una sottocartella -->
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-mark">&gt;</span>
+        <span class="nav__logo-text">davide.brogna</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigazione principale">
+        <a href="../index.html#about">Chi sono</a>
+        <a href="../index.html#download">Download</a>
+        <a href="../index.html#progetti">Progetti personali</a>
+        <a href="../index.html#contatti">Contatti</a>
+      </nav>
+
+      <button class="nav__toggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO PROGETTO ====== -->
+  <section id="top" class="hero">
+    <a href="../index.html#progetti" class="back-link">← Tutti i progetti</a>
+
+    <div class="hero__meta">
+      <span class="hero__index">2026</span>
+      <span class="hero__label">Web App · PWA</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__line">Progetto</span>
+      <span class="hero__line hero__line--accent">Registro <em>ore</em></span>
+      <span class="hero__line hero__line--small">— PWA per il monitoraggio delle timbrature</span>
+    </h1>
+
+    <p class="hero__intro">
+      Una Web Application progressiva (PWA) sviluppata da zero per risolvere le
+      discrepanze del sistema di timbratura aziendale e tenere traccia in modo
+      preciso delle ore lavorate, degli straordinari e dei permessi.
+    </p>
+
+    <div class="hero__actions">
+      <!-- Sostituisci con i link reali quando li avrai -->
+      <a href="#" class="btn btn--primary">Demo live →</a>
+      <a href="#" class="btn btn--ghost">Codice su GitHub ↗</a>
+    </div>
+  </section>
+
+  <!-- ====== IL PROBLEMA ====== -->
+  <section class="section">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">Il problema</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        Il sistema di timbratura aziendale presentava discrepanze ricorrenti tra
+        le ore effettivamente lavorate e quelle conteggiate, in particolare per
+        gli straordinari e i turni a cavallo della mezzanotte. Senza uno strumento
+        personale per tenere traccia delle ore con precisione, era difficile
+        verificare la correttezza delle buste paga.
+      </p>
+      <p>
+        Servivano tre cose: una registrazione affidabile di ogni timbratura,
+        un calcolo automatico degli straordinari e l'accessibilità rapida da
+        smartphone, anche senza connessione.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== LA SOLUZIONE ====== -->
+  <section class="section">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">La soluzione</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        Ho progettato e sviluppato <strong>Registro ore</strong>, una Progressive
+        Web App che funziona offline, si installa sul telefono come una vera
+        applicazione e tiene traccia delle ore in tempo reale.
+      </p>
+      <p>
+        L'approccio PWA mi ha permesso di avere un'app multi-piattaforma senza
+        passare per gli store, con la possibilità di aggiornarla in qualsiasi
+        momento e di farla funzionare anche in caso di assenza di rete.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== FUNZIONALITÀ ====== -->
+  <section class="section">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Funzionalità chiave</h2>
+    </div>
+
+    <ul class="feature-list">
+      <li><strong>Timbratura rapida</strong> — registrazione di entrata/uscita con un tap, con ora e data automatiche.</li>
+      <li><strong>Calcolo straordinari</strong> — riconoscimento automatico delle ore oltre la soglia contrattuale.</li>
+      <li><strong>Funzionamento offline</strong> — i dati restano salvati localmente anche senza connessione.</li>
+      <li><strong>Riepilogo mensile</strong> — totale ore lavorate, straordinari e saldo del mese in un colpo d'occhio.</li>
+      <li><strong>Esportazione dati</strong> — possibilità di esportare il riepilogo per archiviazione o confronto.</li>
+      <li><strong>Installabile come app</strong> — aggiungibile alla schermata home del telefono come una qualsiasi app nativa.</li>
+    </ul>
+  </section>
+
+  <!-- ====== STACK TECNOLOGICO ====== -->
+  <section class="section">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Stack tecnologico</h2>
+    </div>
+
+    <div class="project__tags">
+      <!-- Modifica questi tag con le tecnologie che hai effettivamente usato -->
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>PWA</span>
+      <span>Service Worker</span>
+      <span>LocalStorage</span>
+    </div>
+  </section>
+
+  <!-- ====== SCREENSHOT (opzionale) ====== -->
+  <!-- Quando avrai degli screenshot, mettili in /assets/images/ e attiva
+       la sezione qui sotto rimuovendo i tag di commento.
+
+  <section class="section">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Screenshot</h2>
+    </div>
+
+    <div class="screenshots">
+      <img src="../assets/images/registro-ore-1.jpg" alt="Schermata principale" loading="lazy" />
+      <img src="../assets/images/registro-ore-2.jpg" alt="Riepilogo mensile" loading="lazy" />
+    </div>
+  </section>
+  -->
+
+  <!-- ====== CTA RITORNO ====== -->
+  <section class="section section--contact">
+    <p class="contact__lead">
+      Vuoi vedere altri progetti o metterti in contatto?
+    </p>
+    <div class="hero__actions">
+      <a href="../index.html#progetti" class="btn btn--ghost">← Tutti i progetti</a>
+      <a href="../index.html#contatti" class="btn btn--primary">Contattami</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="year"></span> Davide Brogna</span>
+      <span>Costruito con Claude IA e tanto caffè.</span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
 
