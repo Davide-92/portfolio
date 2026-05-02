@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davide Brogna — Portfolio personale</title>
+  <meta name="description" content="Sito personale di Davide Brogna. Progetti, curriculum e contatti." />
+
+  <!-- Open Graph (anteprima quando condividi il link su social/messaggi) -->
+  <meta property="og:title" content="Davide Brogna — Portfolio personale" />
+  <meta property="og:description" content="Progetti, curriculum e contatti." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon: sostituiscilo con il tuo dentro /assets/ -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Font (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark">✦</span>
+        <span class="nav__logo-text">Nome Cognome</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigazione principale">
+        <a href="#about">Chi sono</a>
+        <a href="#download">Download</a>
+        <a href="#progetti">Progetti personali</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+
+      <button class="nav__toggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section id="top" class="hero">
+    <div class="hero__meta">
+      <span class="hero__index">01</span>
+      <span class="hero__label">Portfolio · 2026</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__line">Ciao, sono</span>
+      <span class="hero__line hero__line--accent">Davide <em>Brogna</em></span>
+      <span class="hero__line hero__line--small">— Impiegato Tecnico.</span>
+    </h1>
+
+    <p class="hero__intro">
+      Dalla Ricerca e Sviluppo all'assistenza IT: progetto l’affidabilità, certifico l’eccellenza e sviluppo soluzioni digitali per trasformare ogni sfida tecnica in un processo che funziona.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#progetti" class="btn btn--primary">Vedi i progetti</a>
+      <a href="#download" class="btn btn--ghost">Scarica il CV →</a>
+    </div>
+
+    <div class="hero__corner" aria-hidden="true">
+      <div class="hero__corner-line"></div>
+      <span class="hero__corner-text">scroll ↓</span>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Chi sono</h2>
+    </div>
+
+    <div class="about">
+      <div class="about__photo">
+        <!-- Sostituisci con la tua foto in /assets/images/ -->
+        <img src="assets/images/profilo.jpg" alt="Foto di Davide Brogna" loading="lazy" />
+      </div>
+
+      <div class="about__text">
+        <p class="about__lead">
+          Ciao! Sono Davide Brogna, un tecnico con le radici in Sicilia e il cuore operativo sulle sponde del Lago di Garda. 
+          Oggi mi definisco un risolutore di problemi a 360 gradi: nella mia quotidianità mi muovo tra la precisione della 
+          Ricerca e Sviluppo e la dinamicità del supporto IT, con l'obiettivo costante di rendere i processi aziendali più 
+          fluidi, intelligenti e affidabili. 
+          Non mi accontento che le cose "funzionino"; punto a diventare il riferimento tecnico capace di trasformare una 
+          criticità in un’opportunità di miglioramento.
+        </p>
+        <p>
+          Il mio percorso parte da una solida base come Perito Meccanico e Tecnico delle Rinnovabili, ma è la versatilità la mia vera firma. 
+          Se negli anni come Store Manager ho imparato a gestire lo stress e il rapporto con le persone, oggi in Stagnoli TG fondo queste doti 
+          relazionali con competenze tecniche avanzate, che vanno dalla certificazione di prodotto alla gestione di infrastrutture IT complesse. 
+          Cosa mi rende diverso? La mia curiosità non finisce quando stacco dal lavoro: se vedo un'inefficienza, creo una soluzione, che sia 
+          sviluppare da zero una Web App per gestire i miei orari o dedicarmi alla manutenzione meccanica e ai lavori manuali con la stessa precisione che metto in ufficio. 
+          Sono un mix di visione digitale e manualità artigiana, sempre pronto alla prossima sfida.
+        </p>
+
+        <ul class="about__facts">
+          <li><span>Base</span> Castiglione delle Stiviere, IT</li>
+          <li><span>Lavoro</span> Tecnico / Automazione</li>
+          <li><span>Lingue</span> Italiano, Inglese</li>
+          <li><span>Stato</span> Aperto a nuove avventure</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DOWNLOAD ====== -->
+  <section id="download" class="section section--cv">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Download</h2>
+    </div>
+
+    <div class="cv">
+      <p class="cv__text">
+        Il mio CV è disponibile in formato PDF: puoi visualizzarlo nel browser
+        oppure scaricarlo direttamente.
+      </p>
+      <div class="cv__actions">
+        <!-- Il file PDF va in /assets/file/cv.pdf
+             (la cartella "file" può ospitare anche altri documenti che vuoi linkare) -->
+        <a href="assets/file/cv.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+          Apri il CV (PDF)
+        </a>
+        <a href="assets/file/cv.pdf" class="btn btn--ghost" download>
+          Scarica il PDF ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROGETTI PERSONALI ====== -->
+  <section id="progetti" class="section">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Progetti personali</h2>
+    </div>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project__image">
+          <img src="assets/images/progetto-1.jpg" alt="Progetto uno" loading="lazy" />
+        </div>
+        <div class="project__body">
+          <span class="project__year">2026</span>
+          <h3 class="project__title">Registro ore</h3>
+          <p class="project__desc">
+            Una breve descrizione: cosa hai fatto, qual era l'obiettivo, perché conta.
+            Massimo due o tre righe.
+          </p>
+          <div class="project__tags">
+            <span>Tag</span><span>Tag</span><span>Tag</span>
+          </div>
+          <a href="#" class="project__link">Approfondisci →</a>
+        </div>
+      </article>
+<!-- 
+      <article class="project project--reverse">
+        <div class="project__image">
+          <img src="assets/images/progetto-2.jpg" alt="Progetto due" loading="lazy" />
+        </div>
+        <div class="project__body">
+          <span class="project__year">2024</span>
+          <h3 class="project__title">Titolo del secondo progetto</h3>
+          <p class="project__desc">
+            Altra descrizione breve. Se il progetto è online, linka direttamente alla
+            pagina o al repository GitHub.
+          </p>
+          <div class="project__tags">
+            <span>Tag</span><span>Tag</span>
+          </div>
+          <a href="#" class="project__link">Approfondisci →</a>
+        </div>
+      </article> 
+
+      <article class="project">
+        <div class="project__image">
+          <img src="assets/images/progetto-3.jpg" alt="Progetto tre" loading="lazy" />
+        </div>
+        <div class="project__body">
+          <span class="project__year">2024</span>
+          <h3 class="project__title">Titolo del terzo progetto</h3>
+          <p class="project__desc">
+            Descrizione. Puoi duplicare questo blocco quante volte vuoi per aggiungere
+            altri progetti, o cancellarne se ne hai meno.
+          </p>
+          <div class="project__tags">
+            <span>Tag</span><span>Tag</span><span>Tag</span>
+          </div>
+          <a href="#" class="project__link">Approfondisci →</a>
+        </div>
+      </article>
+
+    </div>
+  </section> -->
+
+  <!-- ====== VIDEO (sezione disattivata) ======
+       Sezione nascosta. Se vuoi riattivarla, rimuovi i tag di commento
+       attorno al blocco. Se invece vuoi solo embeddare un singolo video
+       dentro "Chi sono" o "Progetti personali", copia il blocco
+       <div class="video__frame">...</div> e incollalo dove ti serve.
+
+  <section id="video" class="section">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Video</h2>
+    </div>
+
+    <p class="section__intro">
+      Una raccolta di video pescati direttamente dal mio canale YouTube.
+    </p>
+
+    <div class="videos">
+
+      COME EMBEDDARE UN VIDEO YOUTUBE:
+      1. Vai sul video su YouTube
+      2. Copia l'ID dall'URL (la parte dopo "v="):
+         https://www.youtube.com/watch?v=XXXXXXXXXXX  <-- l'ID è XXXXXXXXXXX
+      3. Sostituisci VIDEO_ID_QUI nell'attributo src qui sotto
+
+      <figure class="video">
+        <div class="video__frame">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_QUI_1"
+            title="Titolo video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <figcaption>
+          <h3>Titolo del primo video</h3>
+          <p>Una riga di contesto: di cosa parla, dove è stato girato, perché lo metti qui.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="video">
+        <div class="video__frame">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_QUI_2"
+            title="Titolo video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <figcaption>
+          <h3>Titolo del secondo video</h3>
+          <p>Altra breve descrizione del video.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+  ====== /VIDEO ====== -->
+
+  <!-- ====== CONTATTI ====== -->
+  <section id="contatti" class="section section--contact">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Restiamo in contatto</h2>
+    </div>
+
+    <p class="contact__lead">
+      Per proposte, domande o anche solo un saluto.
+    </p>
+
+    <a href="mailto:tuamail@example.com" class="contact__email">
+      davidebro92@gmail.com
+    </a>
+
+    <ul class="contact__socials">
+      <li><a href="https://linkedin.com/in/davide92" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+    </ul>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="year"></span> Davide Brogna</span>
+      <span>Costruito con Claude IA e tanto caffè.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
